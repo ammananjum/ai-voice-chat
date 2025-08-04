@@ -52,7 +52,7 @@ export default function Home() {
         </div>
 
         <h1 className="text-3xl font-bold text-center mb-2">AI Voice Chat</h1>
-        <p className="text-sm text-center text-gray-300 mb-6">Say "Hello Whisper" to begin — if nothing happens, try again.</p>
+        <p className="text-sm text-center text-gray-300 mb-6">Say & quot;Hello Whisper&quot; to begin — if nothing happens, try again.</p>
 
         <div className="mb-4 text-center">
           <p className="text-lg">
