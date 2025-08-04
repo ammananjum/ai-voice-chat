@@ -3,6 +3,7 @@ import { useMicrophone } from '../hooks/useMicrophone';
 import { useWhisper } from '../hooks/useWhisper';
 import { useLLM } from '../hooks/useLLM';
 import { useTTS } from '../hooks/useTTS';
+import Image from 'next/image';
 
 export default function Home() {
   const { isRecording, audioChunks, startRecording, stopRecording } = useMicrophone();
@@ -29,7 +30,7 @@ export default function Home() {
       }, 2000);
 
       setTimeout(() => {
-        const sentence ='You said: ${transcript}. How can I help?';
+        const sentence ="You said: ${transcript}. How can I help?";
         speak(sentence);
 
         // Save session to history
@@ -47,7 +48,7 @@ export default function Home() {
       <div className="bg-zinc-900 text-white rounded-2xl shadow-lg p-8 w-full max-w-2xl">
         {/* Avatar image */}
         <div className="flex justify-center mb-4">
-          <img src="/avatarAI.jpg" alt="AI Avatar" className="w-24 h-24 rounded-full border-4 border-purple-600" />
+          <Image src="/avatarAI.jpg" alt="AI Avatar" width={96} height={96} className="rounded-full border-4 border-purple-600" />
         </div>
 
         <h1 className="text-3xl font-bold text-center mb-2">AI Voice Chat</h1>
