@@ -18,7 +18,7 @@ A browser-based AI voice assistant built with Next.js and TypeScript. It simulat
 
 ---
 
-## 🚀 How It Works
+## How It Works
 
 1. The user clicks *"Start Recording"* to begin voice input.
 2. Audio is recorded and passed to a simulated *Whisper* model.
@@ -28,7 +28,7 @@ A browser-based AI voice assistant built with Next.js and TypeScript. It simulat
 
 ---
 
-## 🛠 Getting Started
+##  Getting Started
 
 ### 1. Clone the repository
 
