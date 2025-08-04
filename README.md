@@ -1,40 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# AI Voice Chat App
 
-## Getting Started
+A browser-based AI voice assistant built with Next.js and TypeScript. It simulates real-time voice interaction using Web Workers and the OpenAI API.
 
-First, run the development server:
+> *Note:* Due to time and complexity constraints, Whisper and TTS integrations are simulated using frontend logic. The app demonstrates the full pipeline behavior expected in a real local AI voice assistant.
 
-```bash
+---
+
+## Features
+
+- Built with *Next.js* and *TypeScript*
+- Microphone recording via *Web Audio API*
+- Simulated *Whisper (speech-to-text)* using Web Worker
+- AI responses using *OpenAI Chat Completion API*
+- Simulated *TTS playback* using browser voice logic
+- Clean, *dark-themed UI* with Tailwind CSS
+- *PWA configuration* included
+
+---
+
+## 🚀 How It Works
+
+1. The user clicks *"Start Recording"* to begin voice input.
+2. Audio is recorded and passed to a simulated *Whisper* model.
+3. Once transcribed, the text is sent to the *OpenAI API*.
+4. The AI generates a response.
+5. The response is simulated through *TTS* and played aloud in the browser.
+
+---
+
+## 🛠 Getting Started
+
+### 1. Clone the repository
+
+bash
+git clone https://github.com/yourusername/ai-voice-chat-app.git
+cd ai-voice-chat-app
+
+
+### 2. Install dependencies
+
+bash
+npm install
+
+
+### 3. Run the development server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## Note
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project *simulates* the use of Whisper.cpp and TTS models.  
+The goal is to demonstrate how the full *voice → AI → speech* pipeline would function in a real offline application.  
+The structure allows easy replacement with *real models* in the future.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+##  License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+This project is for *demonstration and educational purposes* only.
