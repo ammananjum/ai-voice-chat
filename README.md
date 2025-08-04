@@ -28,15 +28,6 @@ A browser-based AI voice assistant built with Next.js and TypeScript. It simulat
 
 ---
 
-##  Getting Started
-
-### 1. Clone the repository
-
-bash
-git clone https://github.com/yourusername/ai-voice-chat-app.git
-cd ai-voice-chat-app
-
-
 ### 2. Install dependencies
 
 bash
